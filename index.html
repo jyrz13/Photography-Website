@@ -1,108 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>About</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="style.css" rel="stylesheet">
-    
-    
-<style>
-</style>
-    
-</head>
-    
-    
-<body>
- 
-<!-- <div class="container"> -->
-
-<header>
-   <h1>Central Catholic Robotics Team</h1>
-    <img src="images/Frc.png" alt="Top" style="width:8%">
-</header>
-  
-<nav id="tabs ul"> </nav>
-  
-    
-    
-<!--<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>   -->
-    
-<div class="slideshow-container">
-
-					<div class="mySlides fade">
-						<div class="numbertext">1 / 3</div>
-						<img src="images/CC.png" style="width:100%">
-						<div class="text">Image 1</div>
-					</div>
-
-					<div class="mySlides fade">
-						<div class="numbertext">2 / 3</div>
-						<img src="images/central-catholic.png" style="width:100%">
-						<div class="text">Image 2</div>
-					</div>
-
-					<div class="mySlides fade">
-						<div class="numbertext">3 / 3</div>
-						<img src="images/CentralCatholic.jpg" style="width:100%">
-						<div class="text">Image 3</div>
-					</div>
-
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-    
-<script> 
-    var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-    </script>    
-
-<!--
-<div class = "tab">
-  <nav id="tabs"> </nav>
-  <!-- <button class="tablinks" onclick="CCHome">Home</button>
-  <button class="tablinks" onclick="CCHome">Members</button>
-  <button class="tablinks" onclick="CCHome">About</button> 
-</div> -->
-
-    
-    
-    
-<div class="rowhome">
-  <div class="columnhome">
-    <h2>Welcome to the Robotics Team</h2> 
-    <p>Lorem ipsum dolor sit amet, alii nihil te ius, saperet similique argumentum no eos, eam denique liberavisse ut. Saperet contentiones pro ei. Eius blandit duo ad.</p>
-    <p>Nostro audiam conceptam nec id, sint nonumy laudem ea eum, ex sint impetus neglegentur qui. Stet vocent percipitur vel ei. Pro no latine iuvaret gubergren, sit no erant melius luptatum.</p>
-  </div>    
-</div>
-
-<script src="script.js"></script>
-
-</body>
+    <head>
+        
+        
+        
+        <title>index</title>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <!--Custom Stylesheet-->
+        <link rel="stylesheet" href="src/layout.css" type="text/css">
+        <!--Api stuff. Find more at https://developers.google.com/speed/libraries/#jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="Outlines/script.js"></script>
+        
+        
+        
+    </head>
+    <body>
+        
+        
+        
+        <div id="header-wrapper" >
+            <header id="header" class="jumbotron text-center">
+                <!--TODO: Combine title and logo in a single image-->
+                <h1 class="logo"><a href="index.html"><img src="images/logo.png" width="90" height="53" alt="logo" /></a> <span class="alt-logo"></span></h1>
+            </header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div id="nav-wrapper" class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a onclick="loadDefault()" class="nav-opt" id="nav-default">Default</a></li>
+                        <li class="nav-item"><a onclick="loadPictures()" class="nav-opt" id="nav-pictures">Pictures</a></li>
+                        <li class="nav-item"><a onclick="loadContact()" class="nav-opt" id="nav-contact">Conatct</a></li>
+                        <li class="nav-item"><a onclick="loadContact2()" class="nav-opt" id="nav-contact2">Conatct2</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="content-wrapper" class="container-fluid">
+                <h3>This is the index.html file.</h3>
+            </div>
+        </div>
+        
+        
+        
+    </body>
 </html>
+
+
+
+<script>
+    //Executes when website is first loaded
+    if($(".active").length <= 0) {
+        loadDefault();
+    }
+</script>
